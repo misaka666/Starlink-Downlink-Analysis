@@ -11,11 +11,5 @@
   "complex_sample_count": 11520180,
   "sample_rate_hz": 480000000,
   "duration_seconds": 0.024000375,
-  "continuous_capture": true,
-  "time_column_included": false,
-  "storage_segments_in_order": [
-    "seg_001.csv",
-    "seg_002.csv",
-    "seg_003.csv"
-  ]
+  "continuous_capture": true
 }

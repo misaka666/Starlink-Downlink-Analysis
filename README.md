@@ -16,7 +16,7 @@ The focus here is **what we can currently say about the contents of a frame**. W
 
 ## 1. The Basic Frame Structure
 
-The recording contains complex baseband samples after downconversion and upstream coarse carrier synchronization. Its sampling rate is 480 MHz, and its 11,520,180 samples span 24.000375 ms. Although the recording was stored in multiple files, those files contain one continuous capture.
+The recording contains complex baseband samples after downconversion and upstream coarse carrier synchronization. Its sampling rate is 480 MHz, and its 11,520,180 samples span 24.000375 ms.
 
 The main time–frequency parameters and synchronization sequences of the Starlink downlink have already been described in public research. We use the frame grid established by [Humphreys et al.](https://arxiv.org/abs/2210.11578), together with the edge-pilot references described by [Qin et al.](https://doi.org/10.1038/s44459-026-00075-6). These known structures provide the basis for the analysis below.
 
@@ -47,7 +47,7 @@ For example, `(2, 0, −512)` is the first non-pilot resource in slot 2, on subc
 
 Headers and payload are ordered **from lower to higher frequency within a slot, followed by the next slot**. Two fields can therefore occupy different subcarriers in the same slot. Their boundary does not have to coincide with the start of an OFDM symbol.
 
-We use **R02** as the worked example throughout this article. R02 is the record identifier for the frame at zero-based index 2 in the first storage file of the continuous recording.
+We use **R02** as the worked example throughout this article. R02 is one of the 18 analyzed frame records.
 
 ![R02 resource allocations and received constellations](docs/assets/R02_regions_and_constellations.png)
 
