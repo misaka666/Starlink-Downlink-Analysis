@@ -1,0 +1,21 @@
+{
+  "filename": "Starlink_Downlink_IQ.csv",
+  "download_url": "https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v1.0.0/Starlink_Downlink_IQ.csv",
+  "sha256": "797e13e5788f1a54269cc77a8232e259b61933e4bef4d89cd08854c80649f115",
+  "size_bytes": 311026556,
+  "columns": [
+    "I_data",
+    "Q_data"
+  ],
+  "has_header": true,
+  "complex_sample_count": 11520180,
+  "sample_rate_hz": 480000000,
+  "duration_seconds": 0.024000375,
+  "continuous_capture": true,
+  "time_column_included": false,
+  "storage_segments_in_order": [
+    "seg_001.csv",
+    "seg_002.csv",
+    "seg_003.csv"
+  ]
+}
