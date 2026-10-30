@@ -1,5 +1,7 @@
 **English** | [简体中文](README.zh-CN.md)
 
+> **Please cite our paper** if you use this dataset, analysis, or research results: [Control-Field and Quasi-Cyclic Code Recovery in Starlink Downlink Signals](https://arxiv.org/abs/2610.29387). See [Citation](#citation) for BibTeX.
+
 [Research paper (PDF)](paper/Starlink_Downlink_Analysis.pdf) · [Download IQ CSV (311 MB)](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v1.0.0/Starlink_Downlink_IQ.csv) · [Release v1.0.0](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v1.0.0)
 
 ---
@@ -248,3 +250,21 @@ The practical advance is that a frame can now be presented as a resource map wit
 - SpaceX, [US11792832B1](https://patents.google.com/patent/US11792832B1/en): adaptive modulation and coding, including an illustrative MCS table.
 
 *This article is a technical overview of our research manuscript, “Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink.” Numerical results and their scope follow the experimental definitions in that manuscript.*
+
+## Citation
+
+If you use this dataset, analysis, or research results in your work, please cite our arXiv paper:
+
+Haoyan Liu, Yichuan Ma, Min Yang, and Chengguang Li. **[Control-Field and Quasi-Cyclic Code Recovery in Starlink Downlink Signals](https://arxiv.org/abs/2610.29387)**. arXiv:2610.29387 [eess.SP], 2026.
+
+```bibtex
+@misc{liu2026starlinkdownlink,
+  title         = {Control-Field and Quasi-Cyclic Code Recovery in {Starlink} Downlink Signals},
+  author        = {Haoyan Liu and Yichuan Ma and Min Yang and Chengguang Li},
+  year          = {2026},
+  eprint        = {2610.29387},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.SP},
+  url           = {https://arxiv.org/abs/2610.29387}
+}
+```

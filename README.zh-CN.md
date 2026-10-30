@@ -1,5 +1,7 @@
 [English](README.md) | **简体中文**
 
+> **请引用我们的论文**：如果您在研究中使用本数据集、分析内容或研究结果，请引用 [Control-Field and Quasi-Cyclic Code Recovery in Starlink Downlink Signals](https://arxiv.org/abs/2610.29387)。BibTeX 格式见[引用](#引用)。
+
 [英文论文 PDF](paper/Starlink_Downlink_Analysis.pdf) · [下载 IQ CSV（311 MB）](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v1.0.0/Starlink_Downlink_IQ.csv) · [Release v1.0.0](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v1.0.0)
 
 ---
@@ -248,3 +250,21 @@ R02 的信号搜索得到填充起点 `(297,815,+315)`，后面共有 4205 个�
 - SpaceX：[US11792832B1](https://patents.google.com/patent/US11792832B1/en)。自适应调制编码及示例 MCS 表。
 
 *本文为研究稿《Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink》的中文技术解读。具体数值及适用范围以研究稿中的实验定义为准。*
+
+## 引用
+
+如果您在研究中使用本数据集、分析内容或研究结果，请引用以下 arXiv 论文：
+
+Haoyan Liu, Yichuan Ma, Min Yang, and Chengguang Li. **[Control-Field and Quasi-Cyclic Code Recovery in Starlink Downlink Signals](https://arxiv.org/abs/2610.29387)**. arXiv:2610.29387 [eess.SP], 2026.
+
+```bibtex
+@misc{liu2026starlinkdownlink,
+  title         = {Control-Field and Quasi-Cyclic Code Recovery in {Starlink} Downlink Signals},
+  author        = {Haoyan Liu and Yichuan Ma and Min Yang and Chengguang Li},
+  year          = {2026},
+  eprint        = {2610.29387},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.SP},
+  url           = {https://arxiv.org/abs/2610.29387}
+}
+```
