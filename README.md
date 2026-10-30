@@ -1,6 +1,6 @@
 **English** | [简体中文](README.zh-CN.md)
 
-> **Please cite our paper** if you use this dataset, analysis, or research results: [Control-Field and Quasi-Cyclic Code Recovery in Starlink Downlink Signals](https://arxiv.org/abs/2610.29387). See [Citation](#citation) for BibTeX.
+> **Please cite our paper** if you use this dataset, analysis, or research results: [Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink](https://arxiv.org/abs/2610.29387v2). See [Citation](#citation) for BibTeX.
 
 [Research paper (PDF)](paper/Starlink_Downlink_Analysis.pdf) · [Download IQ CSV (311 MB)](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v1.0.0/Starlink_Downlink_IQ.csv) · [Release v1.0.0](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/tag/v1.0.0)
 
@@ -255,16 +255,17 @@ The practical advance is that a frame can now be presented as a resource map wit
 
 If you use this dataset, analysis, or research results in your work, please cite our arXiv paper:
 
-Haoyan Liu, Yichuan Ma, Min Yang, and Chengguang Li. **[Control-Field and Quasi-Cyclic Code Recovery in Starlink Downlink Signals](https://arxiv.org/abs/2610.29387)**. arXiv:2610.29387 [eess.SP], 2026.
+Haoyan Liu, Yichuan Ma, Haotong Zhao, Chengguang Li, and Min Yang. **[Protocol Data Unit Header Decoding and Payload Coding Recovery in the Starlink Ku-Band Downlink](https://arxiv.org/abs/2610.29387v2)**. arXiv:2610.29387v2 [eess.SP], 2026 (version 2).
 
 ```bibtex
 @misc{liu2026starlinkdownlink,
-  title         = {Control-Field and Quasi-Cyclic Code Recovery in {Starlink} Downlink Signals},
-  author        = {Haoyan Liu and Yichuan Ma and Min Yang and Chengguang Li},
+  title         = {Protocol Data Unit Header Decoding and Payload Coding Recovery in the {Starlink} {Ku-Band} Downlink},
+  author        = {Haoyan Liu and Yichuan Ma and Haotong Zhao and Chengguang Li and Min Yang},
   year          = {2026},
-  eprint        = {2610.29387},
+  eprint        = {2610.29387v2},
   archivePrefix = {arXiv},
   primaryClass  = {eess.SP},
-  url           = {https://arxiv.org/abs/2610.29387}
+  note          = {Version 2},
+  url           = {https://arxiv.org/abs/2610.29387v2}
 }
 ```
