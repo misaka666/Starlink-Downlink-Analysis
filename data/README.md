@@ -1,41 +1,24 @@
-# IQ Recording
+# Raw IQ / 原始IQ
 
-Download `Starlink_Downlink_IQ.csv` from the [v1.0.0 release](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v1.0.0/Starlink_Downlink_IQ.csv).
+[Download / 下载：Starlink_Downlink_IQ_250MSps.bin](https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v2.0.0/Starlink_Downlink_IQ_250MSps.bin)
 
-The CSV contains one header row, `I_data,Q_data`, followed by 11,520,180 sample rows. Each row represents one complex sample, `I + jQ`, at a sampling rate of 480 MHz. The recording duration is 24.000375 ms, and the file size is 311,026,556 bytes. Zero-based sample index `n` corresponds to relative time `n / 480000000` seconds.
+250 MS/s · 12,500,000 complex samples / 复样本 · 50 ms · 50,000,000 bytes.
 
-The samples are complex-baseband receiver observations after downconversion and upstream coarse carrier synchronization. See the paper for the receiver processing used in the analysis.
+Little-endian signed int16, interleaved I,Q. / 小端有符号int16，I、Q交替排列。
+This original recording contains nine complete validated frames plus other candidates and a truncated frame. / 原始记录包含9个完整已验证帧，另有其他候选信号和截断帧，并非恰好9帧连续信号。
 
-## Integrity check
-
-Place the downloaded CSV beside `SHA256SUMS`, then use:
-
-```sh
-sha256sum -c SHA256SUMS
-```
-
-On Windows PowerShell:
-
-```powershell
-Get-FileHash -Algorithm SHA256 -LiteralPath .\Starlink_Downlink_IQ.csv
-```
-
-Compare the result with `SHA256SUMS`.
-
-## Example: load an initial portion
+SHA-256: `c69e82022d45173cdcaf1a5fdc8a2b864e2d61e85ae819af54b16002044adae3`
 
 ```python
 import numpy as np
-
-# Limit the example to the first 100,000 samples.
-iq = np.loadtxt("Starlink_Downlink_IQ.csv", delimiter=",", skiprows=1,
-                max_rows=100_000)
-x = iq[:, 0] + 1j * iq[:, 1]
-fs = 480_000_000
+iq = np.fromfile('Starlink_Downlink_IQ_250MSps.bin', dtype='<i2').reshape(-1, 2)
+x = iq[:, 0].astype(np.float32) + 1j * iq[:, 1].astype(np.float32)
 ```
 
-## 中文说明
+```matlab
+fid = fopen('Starlink_Downlink_IQ_250MSps.bin','rb','ieee-le');
+iq = fread(fid,[2 Inf],'int16=>double'); fclose(fid);
+x = complex(iq(1,:),iq(2,:)); Fs = 250e6;
+```
 
-`Starlink_Downlink_IQ.csv` 为复基带接收信号数据，表头为 `I_data,Q_data`，两列分别对应同相分量 I 和正交分量 Q。采样率为 480 MHz，共 11,520,180 个复采样点，时长为 24.000375 ms，文件大小为 311,026,556 字节。零基采样序号 `n` 对应的相对时间为 `n / 480000000` 秒。
-
-数据为经过下变频和上游粗载波同步后的接收观测。论文介绍了分析中采用的接收处理方法。下载后请使用 `SHA256SUMS` 核对 SHA-256。
+[Frame validation / 逐帧验证](frames_9.csv) · [PDU decoded words / PDU译码字](pdu_headers_9.csv) · [Validation scope / 验证范围](validation_9frames.json)

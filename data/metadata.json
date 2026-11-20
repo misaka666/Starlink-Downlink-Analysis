@@ -1,15 +1,23 @@
 {
-  "filename": "Starlink_Downlink_IQ.csv",
-  "download_url": "https://github.com/misaka666/Starlink-Downlink-Analysis/releases/download/v1.0.0/Starlink_Downlink_IQ.csv",
-  "sha256": "797e13e5788f1a54269cc77a8232e259b61933e4bef4d89cd08854c80649f115",
-  "size_bytes": 311026556,
-  "columns": [
-    "I_data",
-    "Q_data"
+  "filename": "Starlink_Downlink_IQ_250MSps.bin",
+  "format": "little-endian interleaved int16 I,Q",
+  "sample_rate_hz": 250000000,
+  "complex_samples": 12500000,
+  "duration_seconds": 0.05,
+  "size_bytes": 50000000,
+  "sha256": "c69e82022d45173cdcaf1a5fdc8a2b864e2d61e85ae819af54b16002044adae3",
+  "validated_complete_frames": [
+    "F250",
+    "F251",
+    "F252",
+    "G13",
+    "F253",
+    "F254",
+    "F255",
+    "G29",
+    "F256"
   ],
-  "has_header": true,
-  "complex_sample_count": 11520180,
-  "sample_rate_hz": 480000000,
-  "duration_seconds": 0.024000375,
-  "continuous_capture": true
+  "other_content": "Includes other candidate signals and truncated F257; not a record containing exactly nine consecutive frames.",
+  "RF_center_Hz": 12075117197.1668,
+  "RF_metadata_source": "Provided metadata, not independently certified"
 }

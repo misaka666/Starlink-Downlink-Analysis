@@ -1,0 +1,455 @@
+{
+  "complete_frames": 9,
+  "PDU_headers": 18,
+  "coding_blocks": 55,
+  "code5_words": 35,
+  "raw_parity_disagreements": 1,
+  "changed_bits": 1,
+  "final_syndrome_nonzeros": 0,
+  "reencoding_disagreements": 0,
+  "predicted_parity_bits": 35840,
+  "records": [
+    {
+      "frame": "F250",
+      "source_record_id": 250,
+      "TOA_ms": 0.5,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 5,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "F251",
+      "source_record_id": 251,
+      "TOA_ms": 7.166683333333333,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 4,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "F252",
+      "source_record_id": 252,
+      "TOA_ms": 12.500029166666666,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 5,
+      "second_header_D": 6,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          957,
+          457
+        ]
+      ]
+    },
+    {
+      "frame": "G13",
+      "source_record_id": 1013,
+      "TOA_ms": 17.833370833333333,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 5,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "F253",
+      "source_record_id": 253,
+      "TOA_ms": 23.1667125,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 5,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "F254",
+      "source_record_id": 254,
+      "TOA_ms": 28.500020833333334,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 5,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "F255",
+      "source_record_id": 255,
+      "TOA_ms": 33.8333625,
+      "code5_words": 4,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 4,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "G29",
+      "source_record_id": 1029,
+      "TOA_ms": 39.16669166666667,
+      "code5_words": 4,
+      "raw_failed_checks": 4,
+      "raw_parity_disagreements": 1,
+      "changed_bits": 1,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 5,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          10,
+          387,
+          -117
+        ]
+      ],
+      "PDU2_range": [
+        [
+          10,
+          388,
+          -116
+        ],
+        [
+          10,
+          843,
+          343
+        ]
+      ]
+    },
+    {
+      "frame": "F256",
+      "source_record_id": 256,
+      "TOA_ms": 44.50002083333334,
+      "code5_words": 3,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
+      "final_failed_checks": 0,
+      "reencoding_errors": 0,
+      "second_header_blocks": 4,
+      "second_header_D": 4,
+      "PDU1_range": [
+        [
+          2,
+          0,
+          -512
+        ],
+        [
+          2,
+          227,
+          -277
+        ]
+      ],
+      "Code5_range": [
+        [
+          2,
+          228,
+          -276
+        ],
+        [
+          8,
+          347,
+          -157
+        ]
+      ],
+      "PDU2_range": [
+        [
+          8,
+          348,
+          -156
+        ],
+        [
+          8,
+          803,
+          303
+        ]
+      ]
+    }
+  ],
+  "scope": "Only nine complete frames; truncated F257 excluded. Frozen prior models, no new matrix fit. Zero decoded syndrome is not measured BER."
+}
