@@ -3,8 +3,8 @@
   "PDU_headers": 18,
   "coding_blocks": 55,
   "code5_words": 35,
-  "raw_parity_disagreements": 1,
-  "changed_bits": 1,
+  "raw_parity_disagreements": 0,
+  "changed_bits": 0,
   "final_syndrome_nonzeros": 0,
   "reencoding_disagreements": 0,
   "predicted_parity_bits": 35840,
@@ -56,7 +56,9 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "F251",
@@ -105,7 +107,9 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "F252",
@@ -154,7 +158,9 @@
           957,
           457
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "G13",
@@ -203,7 +209,9 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "F253",
@@ -252,7 +260,9 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "F254",
@@ -301,7 +311,9 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "F255",
@@ -350,16 +362,18 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     },
     {
       "frame": "G29",
       "source_record_id": 1029,
       "TOA_ms": 39.16669166666667,
       "code5_words": 4,
-      "raw_failed_checks": 4,
-      "raw_parity_disagreements": 1,
-      "changed_bits": 1,
+      "raw_failed_checks": 0,
+      "raw_parity_disagreements": 0,
+      "changed_bits": 0,
       "final_failed_checks": 0,
       "reencoding_errors": 0,
       "second_header_blocks": 4,
@@ -399,7 +413,9 @@
           843,
           343
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 4,
+      "prior_receiver_raw_parity_disagreements": 1
     },
     {
       "frame": "F256",
@@ -448,8 +464,15 @@
           803,
           303
         ]
-      ]
+      ],
+      "prior_receiver_raw_failed_checks": 0,
+      "prior_receiver_raw_parity_disagreements": 0
     }
   ],
-  "scope": "Only nine complete frames; truncated F257 excluded. Frozen prior models, no new matrix fit. Zero decoded syndrome is not measured BER."
+  "scope": "Nine complete frames only. Refined PSS/SSS/pilot receiver:35 raw hard-decision code5 words match frozen P/H and prior validated decoded words. Prior receiver statistics retained separately. Not measured zero channel BER.",
+  "receiver_stage": "PSS/SSS/pilot refined, no target-specific phase fitting",
+  "prior_receiver_statistics": {
+    "raw_parity_disagreements": 1,
+    "changed_bits": 1
+  }
 }
